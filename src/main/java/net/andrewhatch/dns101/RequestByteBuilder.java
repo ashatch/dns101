@@ -15,6 +15,8 @@ public class RequestByteBuilder {
   private static final short ADDITIONAL_RECORD_COUNT = 0x0000;
   private static final byte NO_MORE_PARTS = 0x00;
   public static final short TYPE_HOST_REQUEST = 0x0001;
+
+  // IN denotes INTERNET
   private static final short CLASS_IN = 0x0001;
 
   private final String domain;

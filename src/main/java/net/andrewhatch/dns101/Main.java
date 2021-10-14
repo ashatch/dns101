@@ -11,7 +11,7 @@ public class Main {
   public static void main(final String[] args) throws IOException {
     final InetAddress googleDnsIp = InetAddress.getByAddress(new byte[]{0x08, 0x08, 0x08, 0x08});
     final DnsRequestBuilder packetBuilder = new DnsRequestBuilder(googleDnsIp, 53);
-    final RequestByteBuilder requestBuilder = new RequestByteBuilder("amplience.com");
+    final RequestByteBuilder requestBuilder = new RequestByteBuilder("example.com");
     final DatagramSocket socket = new DatagramSocket();
     final ResponseReceiver responseReceiver = new ResponseReceiver(socket);
 
